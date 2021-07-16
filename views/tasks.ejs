@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="../dev/js/jquery/jquery.min.js"></script>
+    <script>
+        $(window).on('load', function(){
+        $('li').on('click', function(){
+        $(this) .css({textDecoration:'line-through'})
+        .find('span')
+        .html('fait');
+        });
+    })
+
+ </script>
+
+</head>
+<body>
+
+   <!--  <h1>2 tâche(s) prévue(s)</h1>
+ <ul>
+    <li>Tâche n°1</li>
+    <li>Tâche n°2</li>
+ </ul> -->
+
+
+<h1><%= tasks %> tâche(s) prévue(s)</h1>
+ <ul>
+    <% for(var i = 1 ; i <= tasks ; i++) { %>
+            <li>Tâche n°<%= i %> <span></span></li>
+    <% } %>
+ </ul>
+
+
+</body>
+</html>
