@@ -1,4 +1,3 @@
-# NodeJs-Express
 This is a simple project for running a server using Nodejs and doing some tasks.
 
 In order for the server to get started, navigate to the folder of the project and run this command in terminal/cmd:
